@@ -5,3 +5,10 @@ C:\MyTestProjects\WebAPI2AuthenticationExample-master\TokenTest\bin\Debug\Newton
 C:\MyTestProjects\WebAPI2AuthenticationExample-master\TokenTest\obj\Debug\TokenTest.csprojResolveAssemblyReference.cache
 C:\MyTestProjects\WebAPI2AuthenticationExample-master\TokenTest\obj\Debug\TokenTest.exe
 C:\MyTestProjects\WebAPI2AuthenticationExample-master\TokenTest\obj\Debug\TokenTest.pdb
+C:\github\TokenTest\TokenTest\bin\Debug\TokenTest.exe.config
+C:\github\TokenTest\TokenTest\obj\Debug\TokenTest.exe
+C:\github\TokenTest\TokenTest\obj\Debug\TokenTest.pdb
+C:\github\TokenTest\TokenTest\bin\Debug\TokenTest.exe
+C:\github\TokenTest\TokenTest\bin\Debug\TokenTest.pdb
+C:\github\TokenTest\TokenTest\bin\Debug\Newtonsoft.Json.dll
+C:\github\TokenTest\TokenTest\obj\Debug\TokenTest.csprojResolveAssemblyReference.cache

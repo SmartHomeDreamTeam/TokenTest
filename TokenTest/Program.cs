@@ -28,6 +28,29 @@ namespace TokenTest
             var result = await service.Get("1", token);
 
             Console.WriteLine("api/Values/{0}  return:{1}","1", result);
+            Post(token);
         }
+
+        private static async void Post(string token)
+        {
+            IPerson person = new Person(){FirstName ="FirstName", LastName = "LastName"};
+            var service = new PostService();
+            var result = await service.Post(person, token);
+
+            Console.WriteLine("Post api/Values  return:{1}", "1", result);
+        }
+
+    }
+
+    public class Person: IPerson
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+    }
+
+    public interface IPerson
+    {
+        string FirstName { get; set; }
+        string LastName { get; set; }
     }
 }
