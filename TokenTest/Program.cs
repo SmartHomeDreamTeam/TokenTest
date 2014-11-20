@@ -33,11 +33,11 @@ namespace TokenTest
 
         private static async void Post(string token)
         {
-            IPerson person = new Person(){FirstName ="FirstName", LastName = "LastName"};
+            Person person = new Person(){FirstName ="FirstName", LastName = "LastName"};
             var service = new PostService();
-            var result = await service.Post(person, token);
+            var result = await service.Post(person, token) as Person;
 
-            Console.WriteLine("Post api/Values  return:{1}", "1", result);
+            Console.WriteLine("Post api/Values  return:FirstName: {1} LastName: {2}", "1", result.FirstName, result.LastName);
         }
 
     }

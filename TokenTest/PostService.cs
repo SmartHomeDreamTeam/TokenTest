@@ -11,7 +11,7 @@ namespace TokenTest
 {
     class PostService
     {
-        public async Task<string> Post<T>(T entity, string token)
+        public async Task<T> Post<T>(T entity, string token)
         {
             var request = (HttpWebRequest)WebRequest.Create(new Uri(String.Format("{0}api/values", Constants.BaseAddress)));
             request.Method = "POST";
@@ -57,8 +57,8 @@ namespace TokenTest
                 {
                     json = new StreamReader(responseStream).ReadToEnd();
                 }
-                //var tokenResponse = JsonConvert.DeserializeObject<T>(json);
-                return json;
+                var tokenResponse = JsonConvert.DeserializeObject<T>(json);
+                return tokenResponse;
             }
             catch (Exception ex)
             {
